@@ -44,7 +44,7 @@ $(EXE):  $(patsubst %.o, $(OBJS_DIR)/%.o, $(OBJS))
 -include $(OBJS_DIR)/cs225/lodepng/*.d
 
 clean:
-	rm -rf $(EXE) $(OBJS_DIR) $(CLEAN_RM)
+	rm -rf $(EXE) $(OBJS_DIR) $(CLEAN_RM) .obj
 
 tidy: clean
 	rm -rf doc
