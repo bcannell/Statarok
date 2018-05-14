@@ -1,5 +1,4 @@
 #include "SmiteLog.h"
-<<<<<<< HEAD
 #include "./cs225/PNG.h"
 
 #include <iostream>
@@ -11,20 +10,6 @@ using namespace std;
 SmiteLogInst::SmiteLogInst(string filename) {
 	std::ifstream infile(filename);
 	if(infile.is_open()){
-=======
-#include <string>
-#include <unordered_map>
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-
-void read_smite_log(string filename) {
-  vector<unordered_map<string,string>> line_vector;
-	std::ifstream infile(filename);
-	if (infile.is_open()) {
->>>>>>> 6a153fa061542863f9113298dfcbf3badc3502ea
 		for(string line; getline(infile, line);){
       unordered_map<string,string> line_map;
       int before = 0;
@@ -32,11 +17,7 @@ void read_smite_log(string filename) {
       int after = 0;
       while(1){
         after = line.find('|',before);
-<<<<<<< HEAD
         if(after==(int)string::npos)
-=======
-        if(after==(int)std::string::npos)
->>>>>>> 6a153fa061542863f9113298dfcbf3badc3502ea
           break;
         equals = line.find('=',before);
         if(equals>after)
@@ -57,7 +38,6 @@ void read_smite_log(string filename) {
     }
 	}
 	infile.close();
-<<<<<<< HEAD
 }
 
 void SmiteLogInst::makeHeatMap(){
@@ -91,8 +71,6 @@ void SmiteLogInst::makeHeatMap(){
 }
 
 void SmiteLogInst::printDamageDealt() {
-=======
->>>>>>> 6a153fa061542863f9113298dfcbf3badc3502ea
   unordered_map<string,string> player_name;
   vector<string> abilities;
   unordered_map<string,pair<int,int>> minion_damage;
@@ -102,11 +80,7 @@ void SmiteLogInst::printDamageDealt() {
       player_name[line_map["playername"]]=line_map["godname"];
     }else if(line_map["type"]=="DIT_Damage"&&line_map["sourceowner"]=="FireZerg"){
       string ability_name = line_map["itemname"];
-<<<<<<< HEAD
       for(unsigned i = 0; i<ability_name.size(); i++)
-=======
-      for(int i = 0; i<ability_name.size(); i++)
->>>>>>> 6a153fa061542863f9113298dfcbf3badc3502ea
         ability_name[i] = toupper(ability_name[i]);
       int before_name = line_map["text"].find("hit");
       int str_for = line_map["text"].find("for");
@@ -138,7 +112,6 @@ void SmiteLogInst::printDamageDealt() {
     cout<<"God's hit "<<god_damage[names].first<<" times for a total of "<<god_damage[names].second<<" damage."<<endl;
     cout<<"Minions's hit "<<minion_damage[names].first<<" times for a total of "<<minion_damage[names].second<<" damage."<<endl<<endl;
   }
-<<<<<<< HEAD
 }
 
 void SmiteLogInst::printDamageTaken() {
@@ -184,6 +157,3 @@ void SmiteLogInst::printDamageTaken() {
     cout<<"Minions's hit "<<minion_damage[names].first<<" times for a total of "<<minion_damage[names].second<<" damage."<<endl<<endl;
   }
 }
-=======
-};
->>>>>>> 6a153fa061542863f9113298dfcbf3badc3502ea
