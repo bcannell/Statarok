@@ -1,10 +1,12 @@
-#include "SmiteLog.h"
-#include "./cs225/PNG.h"
+#include "mainwindow.h"
+#include <QApplication>
 
-int main() {
-	SmiteLogInst currentGame("./example.txt");
-	currentGame.makeHeatMap();
-	currentGame.printDamageDealt();
-	currentGame.printDamageTaken();
-	return 0;
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+
+    w.show();
+
+    return a.exec();
 }

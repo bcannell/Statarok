@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Statarok</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/wolf-emblem.png</normaloff>images/wolf-emblem.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow::separator {
+    background: yellow;
+    width: 10px; /* when vertical */
+    height: 10px; /* when horizontal */
+}
+
+QMainWindow::separator:hover {
+    background: red;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>620</y>
+      <width>471</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  font: 75 18pt &quot;Century Gothic&quot;;
+  color: #ffffff;
+	background-color: rgb(255, 172, 71);
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #1f628d;
+}
+
+QPushButton:hover {
+background-color: rgb(255, 200, 100);
+}</string>
+    </property>
+    <property name="text">
+     <string>Initiate Statarok</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>0</y>
+      <width>554</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/smitemap.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>660</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  font: 75 14pt &quot;Century Gothic&quot;;
+  color: #ffffff;
+	background-color: rgb(255, 64, 64);
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #1f628d;
+}
+
+QPushButton:hover {
+background-color: rgb(255, 96, 96);
+}</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>471</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  font: 75 18pt &quot;Century Gothic&quot;;
+  color: #ffffff;
+	background-color: rgb(64, 196, 64);
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #1f628d;
+}
+
+QPushButton:hover {
+background-color: rgb(96, 228, 96);
+}</string>
+    </property>
+    <property name="text">
+     <string>Select Match</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;Statarok&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/wolf-emblem.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>0</y>
+      <width>21</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>480</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Map Info</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cplayer">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background-color : lightgrey;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Current Player</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btDmgDlt">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>500</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  font: 75 14pt &quot;Century Gothic&quot;;
+  color: #ffffff;
+	background-color: rgb(255, 64, 64);
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #1f628d;
+}
+
+QPushButton:hover {
+background-color: rgb(255, 96, 96);
+}</string>
+    </property>
+    <property name="text">
+     <string>Damage Dealt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btDmgTkn">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>550</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  font: 75 14pt &quot;Century Gothic&quot;;
+  color: #ffffff;
+	background-color: rgb(255, 172, 71);
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #1f628d;
+}
+
+QPushButton:hover {
+background-color: rgb(255, 200, 100);
+}</string>
+    </property>
+    <property name="text">
+     <string>Damage Taken</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btHeal">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>600</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  font: 75 12pt &quot;Century Gothic&quot;;
+  color: #ffffff;
+	background-color: rgb(64, 196, 64);
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #1f628d;
+}
+
+QPushButton:hover {
+background-color: rgb(96, 228, 96);
+}</string>
+    </property>
+    <property name="text">
+     <string>Healing and Mana</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btGoldExp">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>650</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  font: 75 12pt &quot;Century Gothic&quot;;
+  color: #ffffff;
+	background-color:rgb(204,204,0) ;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #1f628d;
+}
+
+QPushButton:hover {
+background-color: rgb(224,224,0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Gold and Exp</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_mstyle">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>510</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background-color : lightgrey;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>490</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Current Plot Style</string>
+    </property>
+   </widget>
+   <widget class="QChartView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>671</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>651</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>label_3</zorder>
+   <zorder>line</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_cplayer</zorder>
+   <zorder>label_8</zorder>
+   <zorder>btDmgDlt</zorder>
+   <zorder>btDmgTkn</zorder>
+   <zorder>btHeal</zorder>
+   <zorder>btGoldExp</zorder>
+   <zorder>label_mstyle</zorder>
+   <zorder>label_9</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>textEdit</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
